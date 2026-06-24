@@ -132,3 +132,22 @@ legend {
     flex: 2;
     background-color: #2D6A4F ;
 }
+#gridContainer{
+    display: grid;
+    background-color: #D8F3DC;
+    border: 2px solid #6B4F3A;
+    grid-template: 350px 350px  / 250px 250px 250px 250px 250px;
+    margin: 50px;
+    height: 68vh;
+}
+#lotm{
+    height: 300px;
+    width: 220px;
+    background-color: blanchedalmond;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px black;
+    gap: 10px;
+    margin: 10px;
+
+}
