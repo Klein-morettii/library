@@ -18,53 +18,68 @@
         <div id="container">
             <div id="sideBar">
                 <div id="addN">
-                    <div> ADD NOVEL </div>
+                    <div> NOVELS </div>
+                </div>
+                 
+                <div id="img">
+                    <img src="MAGI.jpg" alt="magi" width="300px" height="300px">
                 </div>
 
-                <form action="" id="field">
-                    <fieldset>
-                        <legend> Details </legend>
+                
+                <div id="field">
+                    <form action="">
+                        <fieldset>
+                            <legend> Details </legend>
 
-                        <div class="row">
-                            <label for="bName">Book Name: </label>
-                            <input type="text" name="bName" id="bName" required>
+                            <div class="row">
+                                <label for="bName">Book Name:</label>
+                                <input type="text" name="bName" id="bName" required>
+                            </div>
+
+                            <div class="row">
+                                <label for="author">Author:</label>
+                                <input type="text" name="author" id="author" required>
+                            </div>
+
+                            <div class="row">
+                                <label for="chaps"> No. Of Chaps:</label>
+                                <input type="number" name="chaps" id="chaps" min="1">
+                            </div>
+
+                            <div class="row">
+                                <label for="wordCount">Word Count:</label>
+                                <input type="number" name="wordCount" id="wordCount" min="1">
+                            </div>
+
+                            <div class="row">
+                                <label for="status">Reading Status:</label>
+                                <Select id="status" required>
+                                    <option value="toRead">To Read</option>
+                                    <option value="reading">Reading</option>
+                                    <option value="finished">Finished</option>
+                                </Select>
+                            </div>
+                        </fieldset>
+
+                        <div class="fButton">
+                            <button type="submit" class="Sbutton">ADD NOVEL</button>
+                            <button type="reset" class="Sbutton"> RESET </button>
                         </div>
 
-                        <div class="row">
-                            <label for="author">Author:</label>
-                            <input type="text" name="author" id="author" required>
-                        </div>
+                        
+                            
 
-                        <div class="row">
-                            <label for="chaps"> No. Of Chaps: </label>
-                            <input type="text" name="chaps" id="chaps">
-                        </div>
-
-                        <div class="row">
-                            <label for="wordCount">Word Count</label>
-                            <input type="text" name="wordCount" id="wordCount">
-                        </div>
-
-                        <div class="row">
-                            <label for="status">Reading Status:</label>
-                            <Select id="status" required>
-                                <option value="toRead">To Read</option>
-                                <option value="reading">Reading</option>
-                                <option value="finished">Finished</option>
-                            </Select>
-                        </div>
-
-                        <div class="row">
-                            <label for="">asdf</label>
-                            <input type="text" name="" id="">
-                        </div>
-                    </fieldset>
-
-                </form>
+                    </form>
+                </div>
+        
             </div>
 
             <div id="main">y</div>
         </div>
+
+        <footer>
+            <div>Developed by <a href="">Arry</a></div>
+        </footer>
         <script src="library.js"></script>
     </body>
 </html>
