@@ -9,7 +9,7 @@ body{
 
 #heading{
     text-align: center;
-    font-size: 60px;
+    font-size: 50px;
     padding: 15px;
     color: #D4A017;
     text-shadow: 3px 3px 10px black;
@@ -21,7 +21,7 @@ body{
 .yap{
     color: #D8F3DC;
     padding: 20px;
-    font-size: 23px;
+    font-size: 20px;
     text-align: center;
 }
 #container{
@@ -32,16 +32,16 @@ body{
 #sideBar{
     flex: 1;
     background-color: #1B4332;
-    min-height: 80vh;
+    min-height: 76vh;
 }
 #addN{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    font-size: 25px;
+    font-size: 35px;
     color: #D8F3DC;
-    height: 100px;
-    padding: 10px;
+    height: 70px;
+    padding: 5px;
 }
 #field{
     display: flex;
@@ -53,11 +53,10 @@ fieldset {
     
     border: 2px solid #6B4F3A;
     border-radius: 8px;
-    padding: 20px;
+    padding: 10px;
     margin: 20px 0;
     background-color: #1B4332;
     width: 700px;
-    height: 500px;
     color: #D8F3DC;
 }
 label{
@@ -65,8 +64,8 @@ label{
     font-size: 30px;
 }
 select{
-    height: 40px;
-    width: 350px;
+    height: 30px;
+    width: 300px;
     border: 2px solid gray;
     border-radius: 9px;
     box-shadow: 3px 3px 5px #D8F3DC;
@@ -75,8 +74,8 @@ select{
 input{
     border: 2px solid gray;
     border-radius: 9px;
-    height: 40px;
-    width: 350px;
+    height: 30px;
+    width: 300px;
     box-shadow: 3px 3px 5px #D8F3DC;
     font-size: 20px;
 }
@@ -114,12 +113,12 @@ input:user-invalid{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding-bottom: 150px;
+    padding-bottom: 100px;
 }
 footer{
     text-align: center;
     padding: 30px;
-    font-size: 35px;
+    font-size: 25px;
     color: #D8F3DC;
 }
 a{
