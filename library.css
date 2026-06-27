@@ -155,3 +155,10 @@ legend {
     margin: 10px;
 
 }
+
+
+/* properties for things created in js*/
+
+#removeCard:hover{
+    background-color: gray;
+}

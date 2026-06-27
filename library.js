@@ -37,6 +37,7 @@ form.addEventListener("submit", (e)=>{
         cell.style.flexDirection ="column"
         cell.style.gap = "10px"
         cell.style.margin = "10px"
+        cell.style.transition = "0.3s ease;"
 
         grid.append(cell)
 
@@ -87,16 +88,23 @@ form.addEventListener("submit", (e)=>{
             cell.append(contain)
 
         const remove = document.createElement("button")
-            remove.textContent = "remove"
+            remove.textContent = "REMOVE"
             remove.style.border = "1px solid snow"
+            remove.id = "removeCard"
             remove.style.display = "flex"
             remove.style.flexDirection = "column"
             remove.style.marginBottom = "10px"
             remove.style.height = "2em"
             remove.style.width = "5em"
             remove.style.borderRadius = "5px"
-
+            remove.dataset.id = books.id
             contain.append(remove)
+
+            remove.addEventListener("click", (e)=>{
+                cell.remove()
+                const indexToRemove = library.findIndex(books => books.id === remove.dataset.id) 
+                library.splice(indexToRemove, 1)
+            })
 })
 
 
