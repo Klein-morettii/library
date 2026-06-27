@@ -102,12 +102,15 @@ input:user-invalid{
 }
 .Sbutton{
     border: 2px solid #6B4F3A;
-    border-radius: 5px;
+    border-radius: 8px;
     box-shadow: 3px 3px 5px #6B4F3A;
     color: #1B4332;
     font-size: 25px;
     height: 40px;
     width:200px;
+}
+.Sbutton:hover{
+    background-color: #D8F3DC;
 }
 #img{
     display: flex;
@@ -136,9 +139,10 @@ legend {
     display: grid;
     background-color: #D8F3DC;
     border: 2px solid #6B4F3A;
-    grid-template: 350px 350px  / 250px 250px 250px 250px 250px;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     margin: 50px;
     height: 68vh;
+    overflow-y: auto;
 }
 #lotm{
     height: 300px;
