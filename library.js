@@ -100,6 +100,8 @@ form.addEventListener("submit", (e)=>{
             remove.dataset.id = books.id
             contain.append(remove)
 
+            form.reset()
+            
             remove.addEventListener("click", (e)=>{
                 cell.remove()
                 const indexToRemove = library.findIndex(books => books.id === remove.dataset.id) 
